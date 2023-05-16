@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko"></html>
+<h1>테스트</h1>
+    <table>
+      <% for(i = 0; i < list.length; i++) { %>
+      <tr>
+        <td><%=i+1 %></td>
+        <td><%=list[i].NAME %></td>
+        <td><%=list[i].AGE %></td>
+      </tr>
+      <% } %>
+    </table>
+
+<form action="/write" method="POST">
+    id: <input type="text" name="id">
+    name: <input type="text" name="name">
+    age: <input type="text" name="age">
+    <button type="submit">보내기</button>
+</form>
